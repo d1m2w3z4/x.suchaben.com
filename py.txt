@@ -4,3 +4,5 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 pip freeze | xargs pip uninstall -y
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple X
 python3 -m venv .venv
+---
+python3 -c "import ipaddress; print(int(ipaddress.IPv4Address('1.1.1.1')))"
