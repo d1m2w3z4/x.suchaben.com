@@ -1,0 +1,1 @@
+python3 -c 'import base64; import json; import sys; s = sys.argv[1]; s1 = s.split(".")[1]; s1 += "=" * (4 - len(s1) % 4); print(json.loads(base64.urlsafe_b64decode(s1.encode("utf-8"))))'
